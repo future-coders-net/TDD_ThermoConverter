@@ -11,17 +11,18 @@
     <Grid>
         <StackPanel Width="500">
             <Slider Minimum="0" Maximum="100" 
-                    Value="{Binding Celsius, Mode=TwoWay}"/>
+                  Value="{Binding Path=TemperatureModel.Celsius, Mode=TwoWay}"/>
             <StackPanel Orientation="Horizontal">
                 <TextBox Text="摂氏："></TextBox>
                 <TextBox x:Name="Celsius" 
-                         Text="{Binding Celsius}"></TextBox>
+                    Text="{Binding Path=TemperatureModel.Celsius}"></TextBox>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
                 <TextBox Text="華氏："></TextBox>
                 <TextBox x:Name="Fahrenheit" 
-                         Text="{Binding Fahrenheit}"></TextBox>
+                    Text="{Binding Path=TemperatureModel.Fahrenheit}"></TextBox>
             </StackPanel>
         </StackPanel>
+
     </Grid>
 </Page>

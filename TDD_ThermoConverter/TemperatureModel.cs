@@ -23,7 +23,7 @@ namespace TDD_ThermoConverter
         {
             set
             {
-                celsius = value;
+                celsius = Math.Max(0, Math.Min(100, value));
                 fahrenheit = (celsius * 1.8f) + 32;
                 NotifyPropertyChanged("Celsius");
                 NotifyPropertyChanged("Fahrenheit");
