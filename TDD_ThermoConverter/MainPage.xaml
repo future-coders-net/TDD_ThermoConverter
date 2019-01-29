@@ -9,6 +9,18 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
+        <StackPanel Width="500">
+            <Slider Minimum="0" Maximum="100"
+                    ValueChanged="Slider_ValueChanged"/>
+            <StackPanel Orientation="Horizontal">
+                <TextBox Text="摂氏："></TextBox>
+                <TextBox x:Name="Celsius"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBox Text="華氏："></TextBox>
+                <TextBox x:Name="Fahrenheit"></TextBox>
+            </StackPanel>
+        </StackPanel>
 
     </Grid>
 </Page>
